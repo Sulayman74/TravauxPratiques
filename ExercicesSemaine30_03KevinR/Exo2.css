@@ -1,0 +1,164 @@
+@font-face {
+  font-family: 'Mogra';
+  src:url('Fonts/Mogra/Mogra-Regular.ttf') format('truetype');
+}
+
+body {
+  /* background-image: url('assets/wood-pattern.jpg');
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat; */
+  background-image: url('assets/brickWall.png');
+  height: 800vh;
+
+}
+
+h1 {
+  /* background-color: coral; */
+  font-family: 'Mogra';
+  font-style: italic;
+  font-size: 3em;
+  padding: 5%;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+  position: relative;
+}
+
+h1::after {
+  content: "";
+  height: 1vh;
+  width: 3vw;
+  display: inline-block;
+  position: absolute;
+  bottom: 65px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(227, 61, 61, 0.7);
+}
+h1 .lettreE {
+  font-size: 0.7em;
+  position: absolute;
+  top: 70px;
+  left: 99px;
+}
+
+h1 .lettreE::after {
+  content:"";
+  height: 5px;
+  width: 12px;
+  background-color: black;
+  display: block;
+  position: absolute;
+  bottom: 4px;
+  left: 13px;
+}
+
+h1 > span {
+  padding: 0 10px;
+}
+
+h1:hover {
+  transform: scale(1.2);
+}
+
+header {
+  height: 30vh;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.NavBar, ul {
+  display: flex;
+  justify-content: space-evenly;
+  width:50vw;
+  height: 20vh;
+  padding: 5%;
+  box-sizing: border-box;
+}
+
+.NavBar > :nth-child(1) {
+  list-style-type: none;
+  text-transform: uppercase;
+  font-family: 'Mogra';
+  font-size: 1.2em;
+}
+
+.NavBar a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+.NavBar li {
+  transition: all 0.3s ease-in-out;
+
+}
+li:hover {
+  transform: scale(1.2);
+
+}
+.imgCerf {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.imgCerf::after {
+  content: "";
+  position: absolute;
+  top:40%;
+  left:44%;
+  height : 0;
+  width : 0;
+  border-top : 160px solid rgba(251, 23, 23, 0.57);
+  border-left : 160px solid transparent;
+}
+
+.Chevron {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 4em;
+  height:30vh;
+}
+
+.fa-solid.fa-chevron-down{
+  text-decoration: none;
+  color: rgb(227, 61, 61)
+
+}
+
+main {
+  margin: 0 5%;
+  background-image: url('assets/wood-white-grey-line-wooden-facade-fence-texture-background-wall-horizontal-plank-gray_100800-14956.jpeg');
+  background-size: contain;
+  height: 700vh;
+}
+
+#section1 {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+ #section,.PartieG {
+  min-width: 30%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  background-color: red;
+  padding: 20px;
+  text-align: center;
+
+}
+.PartieG h2 {
+  font-size: 3em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+#section1,.ImgDeDroite {
+  background-image: url('assets/bgi1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: center;
+  min-width: 70%;
+}
